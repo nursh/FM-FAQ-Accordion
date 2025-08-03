@@ -17,3 +17,18 @@
   --txt-2: 1.125rem;
   --txt-3: 1rem;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
