@@ -1,5 +1,4 @@
 :root {
-
   --spg-100: 0.5rem;
   --spg-200: 1rem;
   --spg-300: 1.5rem;
@@ -22,6 +21,43 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "WorkSans Italics";
+  src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "WorkSans", sans-serif;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(2rem, 1.3864rem + 2.7273vw, var(--txt-1));
+  color: var(--clr-purple-950);
+  display: flex;
+  align-items: center;
+  gap: var(--spg-300);
+}
+
+h1 img {
+  width: clamp(1.5rem, 1.0909rem + 1.8182vw, 2.5rem);
+  height: clamp(1.5rem, 1.0909rem + 1.8182vw, 2.5rem);
 }
 
 .attribution {
