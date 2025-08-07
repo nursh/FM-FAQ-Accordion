@@ -51,8 +51,16 @@ header {
 }
 
 main {
+  border-radius: clamp(0.5rem, 0.1429rem + 1.7857vw, 1rem);
   padding: var(--mid-size);
   background-color: var(--clr-white);
+  width: clamp(17.5rem, 6.7857rem + 53.5714vw, 32.5rem);
+  margin-inline: auto;
+  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.10);
+}
+
+.faq-section {
+  margin-block-start: clamp(var(--spg-300), 1.1429rem + 1.7857vw, var(--spg-400));
 }
 
 h1,
